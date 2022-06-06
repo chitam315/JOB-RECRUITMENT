@@ -83,10 +83,15 @@ html {
             align-items: center;
             padding: 7px 8px;
             border: 2px solid white;
+
+        }
+        
+        &:hover .dropdown-menu{
+            display: block;
         }
 
         .dropdown-menu {
-            visibility: hidden;
+            display: none;
             position: absolute;
             top: 60px;
             right: 0px;
@@ -94,9 +99,11 @@ html {
             width: 200px;
             border: 2px solid grey;
             padding: 5px 10px;
+            background-color: #fff;
 
             a {
                 text-decoration: none;
+                color: #333;
                 font-size: 14px;
                 height: 14px;
                 width: 120px;
