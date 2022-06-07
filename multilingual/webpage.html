@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multilingual Website</title>
+    <script type ="text/javascript" src ="jquery-1.11.3.min.js"></script>
+    <script type ="text/javascript">
+        var  arrLang = {
+            "en":{
+                "home" : "Home",
+                "about": "About Us",
+                "contact": "Contact"
+            },
+            "vn":{
+                "home" : "Trang Chu",
+                "about": "Ve Chung Toi",
+                "contact": "Lien He"
+            }
+        };
+        $(function(){
+            $('.translate').click(function(){
+                var lang = $(this).attr('id');
+
+                $('.lang').each(function(index, element){
+                    $(this).text(arrLang[lang][$(this).attr('key')]);
+
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <button class ="translate" id ="en">English</button>
+    <button class= "translate" id ="vn">VietNam </button>
+    <ul>
+        <li class ="lang" key ="home">Home</li>
+        <li class ="lang" key ="about">About Us</li>
+        <li class = "lang" key ="contact">Contact</li>
+    </ul>
+    
+</body>
+</html>

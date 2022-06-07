@@ -1,0 +1,408 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    font-size: 'Monserrat', sans-serif;
+}
+
+.clear{
+    clear: both;
+}
+
+body{
+    background: #f1f1f1;
+
+}
+.wrapper{
+    position: fixed;
+    display: flex;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    background-color: #ffff;
+    height: 90px;
+    /* padding: 28px 16px; */
+    /* padding-top: 20px; */
+    /* overflow: hidden; */
+    z-index: 999;
+    
+}
+.wrapper .search_box{
+    width: 50%;
+    background: #ffff;
+    height: 50px;
+    border: 2px solid transparent;
+    display: flex;
+    box-shadow: 8px 8px 8px -8px #292a2b;
+    margin: auto 0;
+    /* position: relative; */
+   
+    
+}
+.wrapper .search_box .dropdown{
+    width: 250px;
+    border-right: 2px solid #494a4d;
+    color: #9fa3b1;
+    cursor: pointer;
+    position: relative;
+
+}
+.wrapper .search_box .dropdown:before{
+    content: "";
+    position: absolute;
+    top: 22px;
+    right: 18px;
+    border: 8px solid;
+    border-color: #5078ef transparent transparent transparent;
+    /* z-index: 999; */
+}
+.wrapper .search_box .dropdown .default_option{
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    top: 18px; 
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    user-select: none;
+
+}
+.wrapper .search_box .dropdown ul{
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    background: #ffff;
+    width: 250px;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 8px 8px 6px -10px #b3c6ff;
+    display: none;
+    overflow: scroll;
+    max-height: 200px;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+}
+.wrapper .search_box .dropdown ul.active{
+    display: block;
+    background-color:#ffff;
+}
+.wrapper .search_box .dropdown ul li{
+    padding-bottom: 20px;
+    user-select: none;
+
+}
+.wrapper .search_box .dropdown ul li:last-child{
+    padding-bottom: 0;
+}
+.wrapper .search_box .dropdown ul li:hover{
+    color: #6f768d;
+}
+.wrapper .search_box .searchField{
+
+    width: 550px;
+    height: 100%;
+    position: relative;
+    color: rgb(73, 72, 72);
+}
+
+.wrapper .search_box .searchField .input{
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 38px;
+    color: rgb(63, 61, 61);
+    position: relative;
+}
+.wrapper .search_box .searchField .fas{
+    position: absolute;
+    /* top: 10px; */
+    right: 10px;
+    font-size: 22px;
+    color: #5078ef;
+    cursor: pointer;
+    padding-top: 14px;
+    padding-bottom: 14px;
+
+}
+
+::-webkit-input-placeholder{
+    color: #9fa3b1;
+}
+::-moz-input-placeholder{
+    color: #9fa3b1;
+}
+::-ms-input-placeholder{
+    color: #9fa3b1;
+}
+.wrapper .logo{
+    width: 25%;
+
+}
+.wrapper .logo .logoLink{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    height: 90px;
+    display: block;
+    
+}
+.wrapper .logoLink img{
+    height: 50px;
+}
+.wrapper .wrapperUser{
+    
+    width: 25%;
+    background: #ffff;
+}
+.wrapper .wrapperUser .userMenu{
+    display: block;
+    /* width: 300px; */
+    color: #9fa3b1;
+    cursor: pointer;
+    
+    
+    /* position: relative; */
+    /* box-sizing: 25px 5px 25px rgb(0,0,0,0.1); */
+
+}
+.wrapper .wrapperUser .userMenu:before{
+    content: "";
+    position: absolute;
+    top: 50px;
+    right: 92px;
+    border: 8px solid;
+    border-color: #5078ef transparent transparent transparent;
+} 
+.wrapper .wrapperUser .userMenu ul li:last-child{
+    padding-bottom: 0;
+}
+.wrapper .wrapperUser .userMenu ul li:hover{
+    color: #6f768d;
+}
+.wrapper .wrapperUser .userMenu ul.active{
+    display: block;
+    background-color:#ffff;
+
+}
+.wrapper .wrapperUser .userMenu ul{
+    position: relative;
+    /* top: 50px; */
+    /* right: 20px; */
+    left: 100px;
+    background: #ffff;
+    width: 270px;
+    border-radius: 5px;
+    padding: 0;
+    box-shadow: 8px 8px 6px -10px #b3c6ff;
+    display: none;
+    z-index: 999;
+
+}
+.wrapper .wrapperUser  img{
+   
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 230px;
+    height: 90px;
+    display: block;
+    object-fit: conver;
+}
+.wrapper .wrapperUser .userMenu .userName{
+    /* justify-content: center;  */
+    font-size: 20px;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+}
+.wrapper .wrapperUser .userMenu  ul li{
+
+    /* border-radius: 2px solid; */
+    display: flex;
+    padding-top :10px;
+    padding-bottom: 10px;
+    /*border: 1px solid;*/
+    /* padding-left: 60px; */
+    padding-left: 40px;
+    font-size: 20px;
+    
+
+    
+    
+}
+.wrapper.wrapper .wrapperUser .userMenu h3{
+    padding-left: 90px;
+    padding-right: 20px;
+
+}
+.wrapper.wrapper .wrapperUser ul li a{
+    padding-left: 60px;
+    padding-top: 5px;
+    left: 140px;
+
+    
+}
+.wrapper.wrapper .wrapperUser ul li img{
+    width: 30px;
+    height: 30px;
+    /* padding:0; */
+    /* left: 20px */
+    padding: 0;
+}
+.container{
+    position: absolute;
+    display: flex;
+    width: 1200px;
+    max-width: 1200px;
+    height: auto;
+    left: 170px;
+    right: 170px;
+    top:100px;
+    background-color: #f1f1f1;
+}
+.container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.container .leftColumn{ 
+    float: left;
+    width: 70%;
+    display: block;
+    /* padding-right: 20px; */
+    /* background-color: #f1f1f1; */
+
+}
+.container .rightColumn{
+    float: left;
+    width: 30%;
+    height: auto;
+    /* padding-left: 20p; */
+    display: block;
+    /* background-color: #ffff;  */
+
+}
+.container .leftColumn .card{
+    margin-top: 20px;
+    width: 820px;
+    height: 180px;
+    display: flex;
+    background-color:#f1f1f1; 
+    border: 1px solid #007aff;
+    /* box-shadow: 8px 0px 8px -8px #f1f1f1; */
+    
+}
+.container .leftColumn .result{
+    width: 660px;
+    background-color: #f1f1f1;
+}
+.pagination{
+    float: left;
+    margin-top: 20px;
+    /* text-align: center; */
+    width: 820px;
+    padding-bottom: 100px;
+    display: flex;
+}
+.pagination ul{
+    width: 100%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    /* background: #fff; */
+    padding: 100px;
+    /* border-radius: 50px; */
+    /* box-shadow: 0px 10px 15px rgba(0,0,0,0.1); */
+  }
+  .pagination ul li{
+    color: #20B2AA;
+    list-style: none;
+    line-height: 45px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s ease;
+  }
+  .pagination ul li.numb{
+    list-style: none;
+    height: 45px;
+    width: 45px;
+    margin: 0 3px;
+    line-height: 45px;
+    border-radius: 50%;
+  }
+  .pagination ul li.numb.first{
+    margin: 0px 3px 0 -5px;
+  }
+  .pagination ul li.numb.last{
+    margin: 0px -5px 0 3px;
+  }
+  .pagination ul li.dots{
+    font-size: 22px;
+    cursor: default;
+  }
+  .pagination ul li.btn{
+    padding: 0 20px;
+    border-radius: 50px;
+  }
+  .pagination li.active,
+  .pagination ul li.numb:hover,
+  .pagination ul li:first-child:hover,
+  .pagination ul li:last-child:hover{
+    color: #fff;
+    background: #20B2AA;
+  }
+
+
+
+.container .rightColumn .rightCard{
+    /* background-color: white; */
+    padding: 20px;
+    margin-top: 20px;
+    background-color: aqua; 
+    height: 350px;
+
+}
+.container .leftColumn .card .cover{
+    width: 20%;
+    background-color: #ffff;
+}
+.container .leftColumn .card .jobInfo{
+    width: 80%;
+    background-color: rgb(245,252,255);
+}
+.container .leftColumn .card .jobInfo ul{
+    padding-left: 50px;
+}
+.container .leftColumn .card .jobInfo ul li{
+    padding:10px;
+}
+.container .leftColumn .card .jobInfo ul .Name{
+    font-size: 25px;
+    color: red;
+}
+.container .leftColumn .card .jobInfo ul .Location{
+    color: rgb(102,102,102);
+}
+.container .leftColumn .card .jobInfo ul .postedDay{
+    color: rgb(102,102,102);
+}
+
+@media screen and (max-width: 1400px) {
+    .container .lefColumn, .container .rightColumn {   
+      width: 100%;
+      padding: 0;
+    }
+}
+.pagination {
+    top: 1000px;
+    height: 30px;
+}
+
