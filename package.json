@@ -5,18 +5,25 @@
   "main": "./src/index.js",
   "scripts": {
     "start": "nodemon --inspect ./src/server.js",
-    "watch": "node-sass --watch src/resources/scss/signup.scss src/public/css/signup.css",
+    "callAPI": "json-server --watch src/app/model/post_content.json",
+    "watch": "node-sass --watch src/resources/scss/show.scss src/public/css/show.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "mysql": "^2.18.1"
+    "json-server": "^0.17.0",
+    "mysql": "^2.18.1",
+    "node-fetch": "^2.6.7"
   },
   "devDependencies": {
     "express": "^4.18.1",
     "express-handlebars": "^6.0.6",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.3.5",
+    "mongoose-slug-generator": "^1.0.4",
+    "mongoose-slug-updater": "^3.3.0",
     "morgan": "^1.10.0",
     "node-sass": "^7.0.1",
     "nodemon": "^2.0.16"

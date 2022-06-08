@@ -1,0 +1,192 @@
+.wrapper {
+  width: 100%;
+  background-color: #ffff;
+  margin-top: 60px;
+  display: block;
+  padding: 30px 0; }
+  .wrapper .search_box {
+    width: 50%;
+    background-color: #eaebf2;
+    color: #333;
+    height: 50px;
+    border: 2px solid transparent;
+    display: flex;
+    box-shadow: 8px 8px 8px -8px #292a2b;
+    margin: auto auto; }
+    .wrapper .search_box .dropdown {
+      width: 25%;
+      border-right: 2px solid #494a4d;
+      color: #9fa3b1;
+      cursor: pointer;
+      position: relative; }
+      .wrapper .search_box .dropdown:before {
+        content: "";
+        position: absolute;
+        top: 22px;
+        right: 18px;
+        border: 8px solid;
+        border-color: #5078ef transparent transparent transparent; }
+      .wrapper .search_box .dropdown .default_option {
+        position: relative;
+        padding-left: 10px;
+        padding-right: 10px;
+        top: 18px;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 14px;
+        user-select: none; }
+      .wrapper .search_box .dropdown ul {
+        position: absolute;
+        top: 50px;
+        left: 0px;
+        background: #ffff;
+        width: 250px;
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 8px 8px 6px -10px #b3c6ff;
+        display: none;
+        overflow: scroll;
+        max-height: 200px;
+        overflow-x: hidden;
+        overflow-y: auto; }
+        .wrapper .search_box .dropdown ul .active {
+          display: block;
+          background-color: #ffff; }
+        .wrapper .search_box .dropdown ul li {
+          padding-bottom: 20px;
+          user-select: none; }
+          .wrapper .search_box .dropdown ul li:last-child {
+            padding-bottom: 0; }
+          .wrapper .search_box .dropdown ul li:hover {
+            color: #6f768d; }
+    .wrapper .search_box .searchField {
+      width: 75%;
+      height: 100%;
+      position: relative;
+      color: #494848; }
+      .wrapper .search_box .searchField .input {
+        width: 100%;
+        height: 100%;
+        border: 0px;
+        font-size: 16px;
+        padding-left: 20px;
+        padding-right: 38px;
+        color: #3f3d3d;
+        position: relative; }
+      .wrapper .search_box .searchField .fas {
+        position: absolute;
+        /* top: 10px; */
+        right: 10px;
+        font-size: 22px;
+        color: #5078ef;
+        cursor: pointer;
+        padding-top: 14px;
+        padding-bottom: 14px; }
+
+.container {
+  display: flex;
+  width: 100%;
+  background-color: #f1f1f1; }
+  .container div {
+    margin: 0 auto; }
+    .container div .leftColumn {
+      display: inline-block; }
+      .container div .leftColumn .card {
+        margin-top: 20px;
+        width: 820px;
+        height: 180px;
+        display: flex;
+        background-color: #f1f1f1;
+        border: 1px solid #97e6ff; }
+        .container div .leftColumn .card .cover {
+          float: left;
+          width: 25%;
+          height: 100%;
+          background-color: #ffff;
+          position: relative;
+          border-right: 1px solid #97e6ff; }
+          .container div .leftColumn .card .cover img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); }
+        .container div .leftColumn .card .jobInfo {
+          width: 75%;
+          display: inline-block;
+          max-width: 650px;
+          background-color: #f5fcff; }
+          .container div .leftColumn .card .jobInfo ul {
+            padding-left: 50px;
+            list-style: none; }
+            .container div .leftColumn .card .jobInfo ul li {
+              padding: 10px; }
+            .container div .leftColumn .card .jobInfo ul .Name a {
+              text-decoration: none;
+              font-size: 25px;
+              color: red; }
+            .container div .leftColumn .card .jobInfo ul .Location {
+              color: #666666; }
+            .container div .leftColumn .card .jobInfo ul .postedDay {
+              color: #666666; }
+      .container div .leftColumn .pagination {
+        float: left;
+        margin-top: 20px;
+        width: 820px;
+        padding-bottom: 100px;
+        display: flex; }
+        .container div .leftColumn .pagination ul {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          padding: 100px; }
+          .container div .leftColumn .pagination ul li {
+            color: #20B2AA;
+            list-style: none;
+            line-height: 45px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 500;
+            cursor: pointer;
+            user-select: none;
+            transition: all 0.3s ease; }
+            .container div .leftColumn .pagination ul li .numb {
+              list-style: none;
+              height: 45px;
+              width: 45px;
+              margin: 0 3px;
+              line-height: 45px;
+              border-radius: 50%; }
+          .container div .leftColumn .pagination ul li.numb.first {
+            margin: 0px 3px 0 -5px; }
+          .container div .leftColumn .pagination ul li.numb.last {
+            margin: 0px -5px 0 3px; }
+          .container div .leftColumn .pagination ul li.dots {
+            font-size: 22px;
+            cursor: default; }
+          .container div .leftColumn .pagination ul li.btn {
+            padding: 0 20px;
+            border-radius: 50px; }
+    .container div .rightColumn {
+      float: left;
+      width: 30%;
+      height: auto;
+      display: block; }
+      .container div .rightColumn .rightCard {
+        /* background-color: white; */
+        padding: 20px;
+        margin-top: 20px;
+        background-color: aqua;
+        height: 350px; }
+
+.pagination li.active,
+.pagination ul li.numb:hover,
+.pagination ul li:first-child:hover,
+.pagination ul li:last-child:hover {
+  color: #fff;
+  background: #20B2AA; }
+
+@media screen and (max-width: 1400px) {
+  .container .lefColumn,
+  .container .rightColumn {
+    width: 100%;
+    padding: 0; } }

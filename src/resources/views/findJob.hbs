@@ -1,0 +1,125 @@
+<link rel="stylesheet" href="/findJob.css">
+
+<div class="wrapper">
+    <div class="search_box">
+        <div class="dropdown">
+            <div class="default_option">Location</div>
+            <ul>
+                <li>Location</li>
+                <li>Ho Chi Minh</li>
+                <li>Ha Noi</li>
+                <li>Da Nang</li>
+                <li>Nghe An</li>
+                <li>Hue</li>
+                <li>Quy Nhon</li>
+                <li>Nha Trang</li>
+                <li>Quang Ngai</li>
+                <li>Can Tho</li>
+                <li>Long An</li>
+                <li>Vung Tau</li>
+            </ul>
+        </div>
+        <div class="searchField">
+            <input type="text" class="input" placeholder="Search">
+            <i class="fas fa-search"></i>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div>
+        <div class="leftColumn">
+            {{#each posts}}
+            <div class="card">
+                <div class="cover">
+                    <img src="{{this.image}}" alt="{{this.companyName}}">
+                </div>
+                <div class="jobInfo">
+                    <ul>
+                        <li class="Name">
+                            <a href="/find-job/{{this.slug}}">{{this.name}}</a>
+                        </li>
+                        <li class="companyNam">{{this.companyName}}</li>
+                        <li class="Location">{{this.location}}</li>
+                        <li class="postedDay">Posted Day: {{this.postedDate}}</li>
+                    </ul>
+                </div>
+            </div>
+            {{/each}}
+            <div class="pagination">
+                <ul></ul>
+                <div class="clear"></div>
+            </div>
+        </div>
+
+        {{!-- <div class="rightColumn">
+            <div class="rightCard">
+                <div class="cover"></div>
+                <div class="jobInfo">
+                    <div class="jobName"></div>
+                    <div class="info">
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="rightCard">
+                <div class="cover"></div>
+                <div class="jobInfo">
+                    <div class="jobName"></div>
+                    <div class="info">
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="rightCard">
+                <div class="cover"></div>
+                <div class="jobInfo">
+                    <div class="jobName"></div>
+                    <div class="info">
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+        </div> --}}
+    </div>
+
+</div>
+
+<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".default_option").click(function () {
+            $(".dropdown ul").toggleClass("active")
+
+        });
+
+        $(".dropdown ul li").click(function () {
+            var choice = $(this).text();
+            $(".default_option").text(choice)
+
+        });
+        $(".userMenu").click(function () {
+            $(".userMenu ul").toggleClass("active")
+
+        });
+        $(".pagination li").click(function () {
+            $(".pagination li").addClass("active")
+
+        });
+
+    });
+</script>
