@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Open Sans, sans-serif !important;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #333;
+    background-color: #fff;
+}
+
+.wrapper {
+    min-height: 550px;
+    background: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper .header {
+    padding: 40px;
+    background: #fff;
+    border: 1px solid #ebebeb;
+    margin-bottom: 8px;
+}
+
+.header > .row {
+    display: flex;
+}
+
+.header .row .col-img{
+    width: 15%;
+}
+
+.header .row .col-img i {
+    width: 110px;
+    height: 110px;
+}
+
+.col-info {
+    width: 60%;
+    position: relative;
+    min-height: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.col-info .col-title {
+    font-weight: 500;
+    font-size: 27px;
+    margin-bottom: 8px;
+    font-family: "Open Sans", Nunito, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.col-info .col-title span {
+    background-color: #F85A5A;
+    display: inline-block;
+    font-size: 10.5px;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 8px;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 5px;
+    vertical-align: middle;
+    position: relative;
+    top: -3px;
+}
+
+.row-apply a {
+    text-decoration: none
+}
+
+.row-apply a:hover {
+    color: #f7941d;
+}
+
+.row-salary .salary {
+    display: block;
+    margin-bottom: 2px;
+    color: #f7941d
+}
+
+.col-btnApply {
+    width: 25%;
+    margin: 0 5px;
+}
+
+.col-btnApply .row {
+    padding: 8px 20px;
+}
+
+.col-btnApply .row .apply-btn{
+    display: block;
+}
+
+.row .apply-btn button {
+    color: #f5f5f5;
+    background-color: #f7941d;
+    cursor: pointer;
+    padding: 11px 20px;
+    margin: 4px 0 5px;
+    font-size: 18px;
+    border: #f7941d;
+    transition: background-color .3s, border-color .3s;
+    line-height: 1.5;
+    border-radius: 2px;
+}
+
+.apply-btn .apply:hover {
+    background-color: #c56d01;
+}
+
+.save-job .savejob {
+    font-weight: 400;
+    padding: 9px 24px;
+    font-size: 14px;
+    margin-top: 2px;
+    display: block;
+    color: #f7941d;
+    border: 1px solid #f7941d;
+    cursor: pointer;
+}
+
+.save-job .savejob:hover {
+    background-color: #f7941d;
+    color: #f5f5f5;
+}
+
+.body {
+    display: flex;
+}
