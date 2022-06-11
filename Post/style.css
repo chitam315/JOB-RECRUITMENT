@@ -146,9 +146,6 @@ body {
     margin-bottom: 8px;
 }
 
-.body .tab-content {
-}
-
 .tab-content .row {
     display: flex;
 }
@@ -221,14 +218,6 @@ a {
 .summary-content .content {
     font-size: 1em;
     padding: 0 0 15px;
-}
-
-.tab-main-content {
-
-}
-
-.tab-main-content .job-info {
-
 }
 
 .tab-main-content .job-info h2 {
