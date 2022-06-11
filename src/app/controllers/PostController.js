@@ -6,19 +6,33 @@ const { post } = require('../../routes/home')
 
 class PostController {
     //[GET] /post
-    index(req, res, next) {
+    async index(req, res, next) {
         posts.find({})
             .then((posts) => {
-                res.render('findJob',{
-                    posts: mongooseHandler.multipleMongooseToObject(posts)
-                })
+                if (req.body) {
+                    res.render('findJob',{
+                        posts: mongooseHandler.multipleMongooseToObject(posts),
+                        user: req.body
+                    })
+                } else {
+                    res.render('findJob')
+                }
             })        
     }
 
     show(req,res,next){
         posts.findOne({slug: req.params.slug})
             .then(post => {
-                res.send(post)
+                if (req.body) {
+                    res.render('showPost',{
+                        post: mongooseHandler.mongooseToObject(post),
+                        user: req.body
+                    })
+                } else {
+                    res.render('showPost',{
+                        post: mongooseHandler.mongooseToObject(post)
+                    })
+                }
             })
     }
     

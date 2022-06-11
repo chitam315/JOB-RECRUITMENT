@@ -1,0 +1,319 @@
+.main-content{
+    background: #f7f7f7;
+    margin-top: 0;
+    padding-bottom: 16px;
+}
+
+.main-content .StickWithHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border-bottom: 1px solid #e8e8e8;
+    margin-bottom: 8px;
+}
+
+.navbar_container .nav-item {
+    display: inline-flex;
+    padding: 10px 0;
+    margin: 0 15px;
+    line-height: 1;
+    border-bottom: 2px solid transparent;
+    transition: colr 0.3s ease 0s, text-shadow 0.3s ease 0s, border 0.3s ease 0s;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.navbar_container a{
+    text-decoration: none;
+}
+
+.navbar_container .nav-label{
+    line-height: 36px;
+}
+
+.nav-item:hover {
+    color: orange;
+}
+
+.nav-item .nav-icon{
+    /* margin-right: 10px; */
+    line-height: 36px;
+}
+
+
+/* ContentContainer */
+.ContentContainer{
+    padding: 0 12.5%;
+    margin-top: 15px;
+}
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.bigMainBorder{
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ContentContainer .leftcol {
+    flex: 0 0 70%;
+    max-width: 70%;
+    padding: 0 16px;
+}
+
+.main-content .main-contenttop{
+    background: rgb(255, 255, 255);
+    padding: 24px;
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 2px;
+    margin-bottom: 12px;
+}
+
+.main-contenttop .main-title {
+    padding: 10px;
+}
+
+.main-title h1 {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 24px;
+    line-height: 1.5;
+}
+
+.main-title h2 {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.job-panel{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0px, 1fr));
+    gap: 20px;
+}
+
+.job-panel .table{
+    display: block;
+    border: 1px solid rgb(153, 227, 250);
+    border-radius: 4px;
+}
+
+.job-panel .table .job-panel-header{
+    border-bottom: 1px solid rgb(153, 227, 250);
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: rgb(229, 248, 253);
+    height: 32px;
+    padding: 0px 15px;
+    font-size: 12px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.job-panel .table .job-panel-body{
+    padding: 15px;
+    font-size: 14px;
+    height: 117px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.job-panel-body .title:hover{
+    color: orange;
+}
+
+.job-panel-body .title {
+    cursor: pointer;
+}
+
+.table .job-panel-body .job-panel-item-posi{
+    align-items: center;
+}
+
+.job-panel-body .job-panel-item-posi .salary {
+    float: right;
+    align-items: center;
+    margin-left: auto;
+}
+
+.ContentContainer .sub-contentandbanner {
+    padding-right: 15px;
+    flex: 0 0 30%;
+    max-width: 30%;
+}
+
+.top-slots>div {
+    margin-bottom: 16px;
+}
+
+.allSubContent{
+    background: rgb(255, 255, 255);
+    margin-bottom: 10px;
+    padding-bottom: 25px;
+    border: 1px solid rgb(238, 238, 238);
+}
+
+.firstTop-slot .headline{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    font-size: 15px;
+    padding: 10px 15px;
+    border-bottom: 1px solid rgb(242, 242, 242);
+}
+
+.firstTop-slot .headline #subtitle {
+    margin-left: 15px;
+    color: rgb(85, 85, 85);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+i {
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+    vertical-align: middle;
+}
+
+.firstTop-slot .introduction {
+    font-size: 16px;
+    padding: 0 15px;
+    color: rgb(85, 85, 85);
+}
+
+.firstTop-slot .introduction .reference-text{
+    color: rgb(155, 155, 155);
+    font-size: 12px;
+}
+
+
+
+.searchSalary .controller input{
+    width: 320px;
+    height: 32px;
+}
+
+.searchSalary .controller .searchSpace button{
+    background-color: orange;
+    width: 150px;
+    height: 32px;
+    border: 1px solid orange;
+}
+
+.searchSalary .controller .searchSpace button:hover{
+    color: inherit;
+    text-decoration: none;
+}
+
+.searchSalary .controller {
+    margin-top: 32px;
+    text-align: center;
+}
+
+.searchSalary .controller .subController {
+    text-align: center;
+    font-size: 14px;
+    margin: 15px 0;
+}
+
+.searchSalary .controller .searchSpace #space {
+    padding: 0.5rem 1rem;
+    border-radius: 0;
+    font-size: 14px;
+}
+
+.main-contentbottom {
+    background: rgb(255, 255, 255);
+    padding: 24px;
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 2px;
+    margin-bottom: 12px;
+}
+
+.main-contentbottom .bigBotton{
+    background: rgb(255, 255, 255);
+    padding: 25px;
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 2px;
+}
+
+.bigBotton .titleBottom .high-paying-job {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.list-jobItem {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list-jobItem .jobItem {
+    flex-basis: calc(50% - 15px);
+    background: rgb(250, 250, 250);
+    border: 1px solid rgb(242, 242, 242);
+    border-radius: 2px;
+    padding: 15px;
+    margin: 7.5px;
+}
+
+.list-jobItem .jobItem .job-title {
+    color: rgb(55, 58, 60);
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.jobItem .job-bottom {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    transition: color 0.3s ease 0s;
+}
+
+.jobItem .job-bottom .job-salary {
+    color: rgb(247, 148, 29);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.jobItem .job-bottom .job-getReport{
+    color: rgb(0, 185, 242);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.share-wrapper {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    text-align: right;
+}
+
+.share-wrapper .share {
+    align-items: center;
+    display: inline-flex;
+    -webkit-box-align: center;
+}
+
+.ads-slot .ads-title{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}

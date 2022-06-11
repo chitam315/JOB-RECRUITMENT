@@ -1,0 +1,147 @@
+<link rel="stylesheet" href="/showPost.css">
+{{#with post}}
+<div class="wrapper">
+    <div class="blank">
+        <div class="header">
+            <div class="row">
+                <dis class="col-img">
+                    <img src="{{image}}" alt="">
+                </dis>
+                <div class="col-info">
+                    <div class="col-title">
+                        {{name}}
+                        <span class="label-urgent">Urgent job</span>
+                    </div>
+                    <div class="row-apply">
+                        <div class="row-1">
+                            <a href="https://www.vietnamworks.com/jobs-at-golden-gate-trade-service-jsc-e1749519-en"
+                                class="track-event">{{companyName}}</a>
+                        </div>
+                        <div class="row-2">
+                            <span class="company-location">
+                                Job Locations:
+                                <a href="https://www.vietnamworks.com/jobs-in-ha-noi-v24-en"
+                                    title="Jobs in Ha Noi">{{location}}</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row-salary">
+                        <span class="salary">{{salary}}</span>
+                        <span class="views">276 views</span>
+                        <span class="-">-</span>
+                        <span class="expires">Expires in 23 days</span>
+                    </div>
+                </div>
+                <div class="col-btnApply">
+                    <div class="row">
+                        <div class="apply-btn">
+                            <button type="button" class="apply">Apply Now</button>
+                        </div>
+                        <div class="save-job">
+                            <button type="button" class="savejob">
+                                <i class="fa-solid fa-heart"></i>
+                                Save Job
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="body">
+            <div class="tab-content">
+                <div class="row">
+                    <div class="tab-sidebar">
+                        <div class="mobile-box">
+                            <div class="box-summary">
+                                <div class="summary-item">
+                                    <div class="sumary-icon">
+                                        <i class="fa-solid fa-paste"></i>
+                                    </div>
+                                    <div class="summary-content">
+                                        <span class="content-label">
+                                            POSTED DATE
+                                        </span>
+                                        <span class="content">
+                                            {{postedDate}}
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="summary-item">
+                                    <div class="sumary-icon">
+                                        <i class="fa-solid fa-paste"></i>
+                                    </div>
+                                    <div class="summary-content">
+                                        <span class="content-label">
+                                            JOB LEVEL
+                                        </span>
+                                        <span class="content">
+                                            {{jobLevel}}
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="summary-item">
+                                    <div class="sumary-icon">
+                                        <i class="fa-solid fa-paste"></i>
+                                    </div>
+                                    <div class="summary-content">
+                                        <span class="content-label">
+                                            JOB CATEGORY
+                                        </span>
+                                        <span class="content">
+                                            <a href="" class="category">{{jobCategory}}</a>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="summary-item">
+                                    <div class="sumary-icon">
+                                        <i class="fa-solid fa-paste"></i>
+                                    </div>
+                                    <div class="summary-content">
+                                        <span class="content-label">
+                                            SKILL
+                                        </span>
+                                        <span class="content">
+                                            {{skill}}
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="summary-item">
+                                    <div class="sumary-icon">
+                                        <i class="fa-solid fa-paste"></i>
+                                    </div>
+                                    <div class="summary-content">
+                                        <span class="content-label">
+                                            PREFERRED LANGUAGE
+                                        </span>
+                                        <span class="content">
+                                            {{preferredLanguage}}
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-main-content">
+                        <div class="job-info">
+                            <h2>JOB DESCRIPTION</h2>
+                            <div id="description">
+                                {{description}}
+                            </div>
+                            <div class="job-requirement">
+                                <h2>JOB REQUIREMENTS</h2>
+                                <div class="requirements">
+                                    {{skill}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/with}}

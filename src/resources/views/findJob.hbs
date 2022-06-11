@@ -1,29 +1,14 @@
 <link rel="stylesheet" href="/findJob.css">
 
 <div class="wrapper">
-    <div class="search_box">
-        <div class="dropdown">
-            <div class="default_option">Location</div>
-            <ul>
-                <li>Location</li>
-                <li>Ho Chi Minh</li>
-                <li>Ha Noi</li>
-                <li>Da Nang</li>
-                <li>Nghe An</li>
-                <li>Hue</li>
-                <li>Quy Nhon</li>
-                <li>Nha Trang</li>
-                <li>Quang Ngai</li>
-                <li>Can Tho</li>
-                <li>Long An</li>
-                <li>Vung Tau</li>
-            </ul>
+    <form action="/result" method="get">
+        <div class="search_box">
+            <div class="searchField">
+                    <input type="text" class="input" placeholder="Search" name="search">
+                    <button type = "submit" class ="fas fa-search"></button>
+            </div>
         </div>
-        <div class="searchField">
-            <input type="text" class="input" placeholder="Search">
-            <i class="fas fa-search"></i>
-        </div>
-    </div>
+    </form>
 </div>
 <div class="container">
     <div>
@@ -50,50 +35,6 @@
                 <div class="clear"></div>
             </div>
         </div>
-
-        {{!-- <div class="rightColumn">
-            <div class="rightCard">
-                <div class="cover"></div>
-                <div class="jobInfo">
-                    <div class="jobName"></div>
-                    <div class="info">
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="rightCard">
-                <div class="cover"></div>
-                <div class="jobInfo">
-                    <div class="jobName"></div>
-                    <div class="info">
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="rightCard">
-                <div class="cover"></div>
-                <div class="jobInfo">
-                    <div class="jobName"></div>
-                    <div class="info">
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-
-        </div> --}}
     </div>
 
 </div>

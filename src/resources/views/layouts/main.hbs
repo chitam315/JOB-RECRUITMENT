@@ -10,7 +10,12 @@
 </head>
 
 <body>
+
+  {{#if user.email}}
   {{>header}}
+  {{else}}
+  {{>headerNotLogin}}
+  {{/if}}
 
   {{{body}}}
 

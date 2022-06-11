@@ -23,7 +23,7 @@ html {
 }
 
 .navbar {
-    z-index: 1;
+    z-index: 999;
     background-image: $bgcolor;
     height: 60px;
     position: fixed;
@@ -95,7 +95,7 @@ html {
             position: absolute;
             top: 60px;
             right: 0px;
-            height: 80px;
+            height: 100px;
             width: 200px;
             border: 2px solid grey;
             padding: 5px 10px;
@@ -106,7 +106,6 @@ html {
                 color: #333;
                 font-size: 14px;
                 height: 14px;
-                width: 120px;
                 margin: 0;
                 padding: 0;
             }
